@@ -1,0 +1,3 @@
+[submodule "Serpent"]
+	path = Serpent
+	url = https://github.com/eovendo/Serpent.git
