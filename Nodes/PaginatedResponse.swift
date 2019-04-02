@@ -17,7 +17,7 @@ public struct Paginator {
     public var totalPages = 0
 }
 
-extension Paginator: Serializable {
+extension Paginator: Serpent.Serializable {
     public init(dictionary: NSDictionary?) {
         total       <== (self, dictionary, "total")
         count       <== (self, dictionary, "count")
@@ -41,7 +41,7 @@ public struct Meta {
     public var paginator = Paginator()
 }
 
-extension Meta: Serializable {
+extension Meta: Serpent.Serializable {
     public init(dictionary: NSDictionary?) {
         paginator <== (self, dictionary, "paginator")
     }
@@ -55,14 +55,14 @@ extension Meta: Serializable {
 
 protocol PaginatedResponseProtocol { }
 
-public final class PaginatedResponse<T:Serializable> {
+public final class PaginatedResponse<T: Serpent.Serializable> {
     public var data:[T] = [T]()
     public var meta:Meta = Meta()
 }
 
 extension PaginatedResponse: PaginatedResponseProtocol {}
 
-extension PaginatedResponse: Serializable {
+extension PaginatedResponse: Serpent.Serializable {
     convenience public init(dictionary: NSDictionary?) {
         self.init()
         data <== (self, dictionary, "data")

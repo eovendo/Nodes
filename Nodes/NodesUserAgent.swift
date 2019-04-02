@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import Alamofire
 
 public enum AppEnvironment: String {
     case development = "development"

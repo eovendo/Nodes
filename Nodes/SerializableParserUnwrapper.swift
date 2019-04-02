@@ -9,7 +9,7 @@
 import Foundation
 import Serpent
 
-public func unwrapper() -> Parser.Unwrapper  {
+public func unwrapper() -> Serpent.Parser.Unwrapper  {
     return { (sourceDictionary, type) in
         if let nestedObject = sourceDictionary.value(forKey: "data") {
             return nestedObject
