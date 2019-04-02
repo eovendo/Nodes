@@ -11,8 +11,6 @@
 		304BDE9C1CF51F28004D2DA6 /* PaginatedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BDE9B1CF51F28004D2DA6 /* PaginatedResponse.swift */; };
 		304BDE9E1CF51F78004D2DA6 /* SerializableParserUnwrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BDE9D1CF51F78004D2DA6 /* SerializableParserUnwrapper.swift */; };
 		30A036D51C9C12720073B505 /* Nodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 30A036D41C9C12720073B505 /* Nodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30A036DC1C9C12730073B505 /* Nodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A036D11C9C12720073B505 /* Nodes.framework */; };
-		30A036E11C9C12730073B505 /* NodesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A036E01C9C12730073B505 /* NodesTests.swift */; };
 		BDCEA6E61DE2FF0900F4EEDC /* Serpent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDCEA6E51DE2FF0900F4EEDC /* Serpent.framework */; };
 		BDCEA6E81DE2FF1B00F4EEDC /* Serpent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDCEA6E71DE2FF1B00F4EEDC /* Serpent.framework */; };
 		BDD823D41D54A4530081BA34 /* NodesUserAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD823D31D54A4530081BA34 /* NodesUserAgent.swift */; };
@@ -27,13 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		30A036DD1C9C12730073B505 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 30A036C81C9C12720073B505 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 30A036D01C9C12720073B505;
-			remoteInfo = Nodes;
-		};
 		E3689C521D9EC7E6004620D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 30A036C81C9C12720073B505 /* Project object */;
@@ -50,9 +41,6 @@
 		30A036D11C9C12720073B505 /* Nodes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nodes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A036D41C9C12720073B505 /* Nodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nodes.h; sourceTree = "<group>"; };
 		30A036D61C9C12720073B505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30A036DB1C9C12730073B505 /* NodesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NodesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		30A036E01C9C12730073B505 /* NodesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodesTests.swift; sourceTree = "<group>"; };
-		30A036E21C9C12730073B505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDCEA6E51DE2FF0900F4EEDC /* Serpent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Serpent.framework; path = Carthage/Build/iOS/Serpent.framework; sourceTree = "<group>"; };
 		BDCEA6E71DE2FF1B00F4EEDC /* Serpent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Serpent.framework; path = Carthage/Build/tvOS/Serpent.framework; sourceTree = "<group>"; };
 		BDD823D31D54A4530081BA34 /* NodesUserAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodesUserAgent.swift; sourceTree = "<group>"; };
@@ -71,14 +59,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDCEA6E61DE2FF0900F4EEDC /* Serpent.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		30A036D81C9C12730073B505 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				30A036DC1C9C12730073B505 /* Nodes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				30A036D31C9C12720073B505 /* Nodes */,
-				30A036DF1C9C12730073B505 /* NodesTests */,
 				E3689C491D9EC7E6004620D6 /* Nodes-tvOS */,
 				E3689C541D9EC7E6004620D6 /* Nodes-tvOSTests */,
 				30A036D21C9C12720073B505 /* Products */,
@@ -118,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				30A036D11C9C12720073B505 /* Nodes.framework */,
-				30A036DB1C9C12730073B505 /* NodesTests.xctest */,
 				E3689C481D9EC7E6004620D6 /* Nodes.framework */,
 				E3689C501D9EC7E6004620D6 /* Nodes.xctest */,
 			);
@@ -136,15 +114,6 @@
 				30A036D61C9C12720073B505 /* Info.plist */,
 			);
 			path = Nodes;
-			sourceTree = "<group>";
-		};
-		30A036DF1C9C12730073B505 /* NodesTests */ = {
-			isa = PBXGroup;
-			children = (
-				30A036E01C9C12730073B505 /* NodesTests.swift */,
-				30A036E21C9C12730073B505 /* Info.plist */,
-			);
-			path = NodesTests;
 			sourceTree = "<group>";
 		};
 		30A036ED1C9C24A50073B505 /* Frameworks */ = {
@@ -231,24 +200,6 @@
 			productReference = 30A036D11C9C12720073B505 /* Nodes.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		30A036DA1C9C12730073B505 /* NodesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 30A036E81C9C12730073B505 /* Build configuration list for PBXNativeTarget "NodesTests" */;
-			buildPhases = (
-				30A036D71C9C12730073B505 /* Sources */,
-				30A036D81C9C12730073B505 /* Frameworks */,
-				30A036D91C9C12730073B505 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				30A036DE1C9C12730073B505 /* PBXTargetDependency */,
-			);
-			name = NodesTests;
-			productName = NodesTests;
-			productReference = 30A036DB1C9C12730073B505 /* NodesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		E3689C471D9EC7E6004620D6 /* Nodes-tvOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3689C5D1D9EC7E6004620D6 /* Build configuration list for PBXNativeTarget "Nodes-tvOS" */;
@@ -297,11 +248,7 @@
 				TargetAttributes = {
 					30A036D01C9C12720073B505 = {
 						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 0900;
-					};
-					30A036DA1C9C12730073B505 = {
-						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1020;
 					};
 					E3689C471D9EC7E6004620D6 = {
 						CreatedOnToolsVersion = 8.0;
@@ -320,6 +267,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 30A036C71C9C12720073B505;
@@ -328,7 +276,6 @@
 			projectRoot = "";
 			targets = (
 				30A036D01C9C12720073B505 /* Nodes */,
-				30A036DA1C9C12730073B505 /* NodesTests */,
 				E3689C471D9EC7E6004620D6 /* Nodes-tvOS */,
 				E3689C4F1D9EC7E6004620D6 /* Nodes-tvOSTests */,
 			);
@@ -337,13 +284,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		30A036CF1C9C12720073B505 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		30A036D91C9C12730073B505 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -378,14 +318,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30A036D71C9C12730073B505 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				30A036E11C9C12730073B505 /* NodesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E3689C431D9EC7E6004620D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -408,11 +340,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		30A036DE1C9C12730073B505 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 30A036D01C9C12720073B505 /* Nodes */;
-			targetProxy = 30A036DD1C9C12730073B505 /* PBXContainerItemProxy */;
-		};
 		E3689C531D9EC7E6004620D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E3689C471D9EC7E6004620D6 /* Nodes-tvOS */;
@@ -536,8 +463,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -561,33 +487,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		30A036E91C9C12730073B505 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = NodesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.NodesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		30A036EA1C9C12730073B505 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = NodesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.NodesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -706,15 +606,6 @@
 			buildConfigurations = (
 				30A036E61C9C12730073B505 /* Debug */,
 				30A036E71C9C12730073B505 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		30A036E81C9C12730073B505 /* Build configuration list for PBXNativeTarget "NodesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				30A036E91C9C12730073B505 /* Debug */,
-				30A036EA1C9C12730073B505 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
