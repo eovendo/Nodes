@@ -29,4 +29,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/eovendo/Nodes.git", :tag => "#{s.version}", :submodules => true }
   s.source_files  = "Nodes"
   s.dependency 'Serpent'
+  s.dependency 'Alamofire'
 end
